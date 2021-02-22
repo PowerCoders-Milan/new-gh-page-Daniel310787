@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@500&display=swap');
+body{
+    background:black;
+    font-family: "Spectral", serif;
+}
+
+/*container grid layout*/
+.container{
+    grid-area: container;
+    display: grid;
+    height: 100vh;
+    ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "header header header" 
+    "title title title"
+    "pic1 pic2 pic3"
+    "parallax-1 parallax-1 parallax-1"
+    "title1 title1 title1"
+    "serv1 serv2 serv3"
+    "title3 title3 title3"
+    "fig4 fig5 fig6"
+    "parallax-2 parallax-2 parallax-2"
+    "footer1 footer2 footer3";
+}
+/*navs container*/
+nav{
+    position: fixed;
+}
+.nav{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 11vh;
+    grid-area:header;     
+    nav-index: auto;
+    width: 100%;
+}
+.logo{
+    border-radius: 50%;
+    width:75px;
+    height: 75px;
+}
+.nav a{
+    position: relative;
+    float: right;
+    top: 10px;
+    padding: 10px 20px;
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+}
+.nav a:hover{
+    border-bottom: 5px solid #4CAF50;
+}
+/*header container*/
+.header{
+    background-image: url(images/pc.jpg);
+    grid-area: header;
+    height: 120vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header h1{
+    font-size: 155px;
+    color: white;
+    background-color:transparent;
+    text-align: center;
+    margin-top: 1em;
+    text-shadow: 5px 5px 5px black;
+}
+.header h2{
+    font-size: 55px;
+    color: white;
+    background-color: transparent;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 4em;
+    text-shadow: 5px 5px 5px black;
+}
+
+.title{
+    grid-area: title;
+    font-size: 85px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    margin: 0em;
+    padding-top: .75em;
+    padding-bottom: 1em;
+    text-decoration: underline;
+}
+/*Main section container*/
+
+.pic1{
+    grid-area: pic1;
+    background-color: black;
+    margin-bottom: 5em;
+}
+.pic2{
+    grid-area: pic2;
+    background-color: black;
+    margin-bottom: 5em;
+}
+.pic3{
+    grid-area: pic3;
+    background-color: black;
+    margin-bottom: 5em;
+}
+figure img{
+    height: 410px;
+    width: 421px;
+    border-radius: 10px;
+    border-bottom: 10px solid #4CAF50;
+}
+.btn{
+    text-decoration: none;
+    background-color: #4CAF50;
+    color: white;
+    border: 2px solid white;
+    margin-left: 9em;
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+.figc{
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    padding-bottom: 2em;
+    padding-top: .5em;
+    text-align: left;
+    line-height: 25px;
+}
+.figc h4{
+    font-size: 25px;
+    line-height: 36px;
+}
+.figc p{
+    font-size: 20px; 
+}
+
+/*Parallax pic container*/
+
+
+.parallax-1{
+    background-image: url(images/ssss.jpg);
+    grid-area: parallax-1;
+    height: 65vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax-1 h3{
+    font-size: 85px;
+    text-align: left;
+    color: white;
+    background-color: transparent;
+    margin: 0em;
+    padding-top: 100px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+.parallax-1 a{
+    text-decoration: none;
+    background-color: #4CAF50;
+    color: white;
+    border: 2px solid white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-left: 1000px;
+    bottom: 6em;
+    position: relative;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+/*services container*/
+.title1{
+    grid-area: title1;
+    font-size: 85px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    margin-bottom: 0em;
+    margin-top: 1em;
+    text-decoration: underline;
+}
+.serv1{
+    grid-area: serv1;
+    height: 110vh;
+    color: white;
+    font-size: 55px;
+    text-align: center;
+    line-height: 36px;
+}
+.serv2{
+    grid-area: serv2;
+    height: 110vh;
+    color: white;
+    font-size: 55px;
+    text-align: center;
+    line-height: 36px;
+}
+.serv3{
+    grid-area: serv3;
+    height: 110vh;
+    color: white;
+    font-size: 55px;
+    text-align: center;
+    line-height: 36px;
+}
+.serv1 p{
+    font-size: 20px;
+    padding: 1em 2em;
+    text-align: center;
+}
+.serv2 p{
+    font-size: 20px;
+    padding: 1em 2em;
+    text-align: center;
+}
+.serv3 p{
+    font-size: 20px;
+    padding: 1em 2em;
+    text-align: center;
+}
+.serv1 i{
+    padding-top: 1em;
+    color: #4CAF50;
+}
+.serv2 i{
+    padding-top: 1em;
+    color: #4CAF50;
+}
+.serv3 i{
+    padding-top: 1em;
+    color: #4CAF50;
+}
+/*recommendations container*/
+.title3{
+    grid-area: title3;
+    height: 8vh;
+    font-size: 85px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    margin-bottom: 1.3em;
+    margin-top: -1.5em;
+    padding-top: .75em;
+    text-decoration: underline;
+}
+.fig4{
+    grid-area: fig4;
+    height: 88vh;
+    margin-left: 8em;
+}
+.fig5{
+    grid-area: fig5;
+    height: 89vh;
+    margin-left: 8em;
+}
+.fig6{
+    grid-area: fig6;
+    height: 89vh;
+    margin-left: 7em;
+}
+.btn2{
+    text-decoration: none;
+    background-color: #4CAF50;
+    color: white;
+    border: 2px solid white;
+    margin-left: 4em;
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+.figc2{
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    padding-bottom: 2em;
+    margin-right: 1em;
+    margin-left: -1em;
+    padding-top: 1em;
+    text-align: left;
+    line-height: 25px;
+}
+.fig4 img{
+    border-radius: 50%;
+    width: 260px;
+    height: 260px;
+}
+.fig5 img{
+    border-radius: 50%;
+    width: 260px;
+    height: 260px;
+}
+.fig6 img{
+    border-radius: 50%;
+    width: 260px;
+    height: 260px;
+}
+.fig6 figcaption{
+    margin-right: 2em;
+}
+/*parallax2 container*/
+.parallax-2{
+    background-image: url(images/internet-the-cover-gif-is-of-a-cat-feverishly-typing-away-on-a-laptop-keyboard-as-would-a-puppet.gif);
+    grid-area: parallax-2;
+    height: 65vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*footer container*/
+.footer1{
+    background-color: black;
+    grid-area: footer1;
+    text-align: center;
+    align-items: center;
+    padding-top: 50px;
+    color: white;
+}
+.footer1 img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.fp{
+    font-size: 25px;
+}
+.footer2{
+    background-color: black;
+    grid-area: footer2;
+    color:white;
+    text-align: center;
+}
+.footer2 li{
+    list-style-type: none;
+    font-size: 20px;
+}
+.footer2 a {
+    text-decoration: none;
+    color: white;
+}
+.footer2 h6{
+    font-size: 30px;
+    margin: 1em;
+}
+.footer3{
+    background-color: black;
+    grid-area: footer3;
+    color: white;
+    margin-top: 1em;
+    margin-left: 5em;
+    margin-bottom: 1em;
+}
+input[type=text], select, textarea {
+    width: 90%;
+    padding: 5px;
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    resize: vertical 
+}
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 0em;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+}
